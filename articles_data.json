@@ -1,0 +1,448 @@
+{
+  "articles": [
+    {
+      "id": 1,
+      "title": "Introduction à l'Intelligence Artificielle : Les Fondamentaux",
+      "slug": "introduction-ia-fondamentaux",
+      "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "author": "LjSoulimen",
+      "date": "2025-06-20",
+      "category": "IA Fondamentaux",
+      "tags": [
+        "IA",
+        "Machine Learning",
+        "Basics"
+      ],
+      "image": "ai-fundamentals.jpg",
+      "read_time": "5 min"
+    },
+    {
+      "id": 2,
+      "title": "Data Science et Python : Guide Complet pour Débutants",
+      "slug": "data-science-python-guide",
+      "excerpt": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
+      "content": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.",
+      "author": "LjSoulimen",
+      "date": "2025-06-19",
+      "category": "Data Science",
+      "tags": [
+        "Python",
+        "Data Science",
+        "Pandas",
+        "NumPy"
+      ],
+      "image": "python-data-science.jpg",
+      "read_time": "8 min"
+    },
+    {
+      "id": 3,
+      "title": "Machine Learning : Algorithmes Supervisés vs Non-Supervisés",
+      "slug": "ml-supervise-non-supervise",
+      "excerpt": "Fusce consequat. Nulla nisl. Nunc nisl. Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi.",
+      "content": "Fusce consequat. Nulla nisl. Nunc nisl. Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, quis posuere neque ante a dolor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
+      "author": "LjSoulimen",
+      "date": "2025-06-18",
+      "category": "Machine Learning",
+      "tags": [
+        "ML",
+        "Supervised Learning",
+        "Unsupervised Learning"
+      ],
+      "image": "ml-algorithms.jpg",
+      "read_time": "12 min"
+    },
+    {
+      "id": 4,
+      "title": "Visualisation de Données avec Matplotlib et Seaborn",
+      "slug": "visualisation-donnees-matplotlib",
+      "excerpt": "Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.",
+      "content": "Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.",
+      "author": "LjSoulimen",
+      "date": "2025-06-17",
+      "category": "Data Visualization",
+      "tags": [
+        "Matplotlib",
+        "Seaborn",
+        "Plotly",
+        "Visualization"
+      ],
+      "image": "data-viz.jpg",
+      "read_time": "10 min"
+    },
+    {
+      "id": 5,
+      "title": "Deep Learning avec TensorFlow : Premiers Pas",
+      "slug": "deep-learning-tensorflow-premiers-pas",
+      "excerpt": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+      "content": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh.",
+      "author": "LjSoulimen",
+      "date": "2025-06-16",
+      "category": "Deep Learning",
+      "tags": [
+        "TensorFlow",
+        "Neural Networks",
+        "Deep Learning"
+      ],
+      "image": "tensorflow-basics.jpg",
+      "read_time": "15 min"
+    },
+    {
+      "id": 6,
+      "title": "Natural Language Processing : Analyse de Sentiment",
+      "slug": "nlp-analyse-sentiment",
+      "excerpt": "Aenean nec lorem. In porttitor. Donec laoreet nonummy augue. Suspendisse dui purus.",
+      "content": "Aenean nec lorem. In porttitor. Donec laoreet nonummy augue. Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend.",
+      "author": "LjSoulimen",
+      "date": "2025-06-15",
+      "category": "NLP",
+      "tags": [
+        "NLP",
+        "Sentiment Analysis",
+        "Text Mining"
+      ],
+      "image": "nlp-sentiment.jpg",
+      "read_time": "11 min"
+    },
+    {
+      "id": 7,
+      "title": "Computer Vision : Détection d'Objets avec YOLO",
+      "slug": "computer-vision-yolo",
+      "excerpt": "Ut fermentum massa justo sit amet risus. Morbi imperdiet, mauris ac auctor dictum.",
+      "content": "Ut fermentum massa justo sit amet risus. Morbi imperdiet, mauris ac auctor dictum, urna mauris imperdiet orci, ac cursus massa orci quis dolor. Nulla facilisi.",
+      "author": "LjSoulimen",
+      "date": "2025-06-14",
+      "category": "Computer Vision",
+      "tags": [
+        "Computer Vision",
+        "YOLO",
+        "Object Detection"
+      ],
+      "image": "computer-vision.jpg",
+      "read_time": "13 min"
+    },
+    {
+      "id": 8,
+      "title": "Optimisation des Hyperparamètres : Techniques Avancées",
+      "slug": "optimisation-hyperparametres",
+      "excerpt": "Pellentesque fermentum dolor. Aliquam quam lectus, facilisis auctor, ultrices ut, elementum vulputate.",
+      "content": "Pellentesque fermentum dolor. Aliquam quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc. Donec mauris. Nam elementum quam vitae ante tristique sodales.",
+      "author": "LjSoulimen",
+      "date": "2025-06-13",
+      "category": "Machine Learning",
+      "tags": [
+        "Hyperparameters",
+        "Optimization",
+        "Grid Search"
+      ],
+      "image": "hyperparameter-tuning.jpg",
+      "read_time": "9 min"
+    },
+    {
+      "id": 9,
+      "title": "MLOps : Déploiement de Modèles en Production",
+      "slug": "mlops-deploiement-production",
+      "excerpt": "Mauris accumsan nulla vel diam. Sed in lacus ut enim adipiscing aliquet.",
+      "content": "Mauris accumsan nulla vel diam. Sed in lacus ut enim adipiscing aliquet. Nulla venenatis. In pede mi, aliquet sit amet, euismod in, auctor ut, ligula.",
+      "author": "LjSoulimen",
+      "date": "2025-06-12",
+      "category": "MLOps",
+      "tags": [
+        "MLOps",
+        "Deployment",
+        "Docker",
+        "Kubernetes"
+      ],
+      "image": "mlops-deployment.jpg",
+      "read_time": "14 min"
+    },
+    {
+      "id": 10,
+      "title": "Éthique en IA : Biais et Fairness dans les Algorithmes",
+      "slug": "ethique-ia-biais-fairness",
+      "excerpt": "Aliquam dapibus tincidunt metus. Praesent justo dolor, lobortis quis, lobortis dignissim.",
+      "content": "Aliquam dapibus tincidunt metus. Praesent justo dolor, lobortis quis, lobortis dignissim, pulvinar at, lorem. Nulla facilisi. Cum sociis natoque penatibus et magnis dis parturient montes.",
+      "author": "LjSoulimen",
+      "date": "2025-06-11",
+      "category": "Éthique IA",
+      "tags": [
+        "Ethics",
+        "Bias",
+        "Fairness",
+        "AI Ethics"
+      ],
+      "image": "ai-ethics.jpg",
+      "read_time": "7 min"
+    },
+    {
+      "id": 11,
+      "title": "Time Series Analysis avec Prophet et ARIMA",
+      "slug": "time-series-prophet-arima",
+      "excerpt": "Nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.",
+      "content": "Nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel.",
+      "author": "LjSoulimen",
+      "date": "2025-06-10",
+      "category": "Time Series",
+      "tags": [
+        "Time Series",
+        "Prophet",
+        "ARIMA",
+        "Forecasting"
+      ],
+      "image": "time-series.jpg",
+      "read_time": "16 min"
+    },
+    {
+      "id": 12,
+      "title": "Clustering : K-Means, DBSCAN et Hierarchical",
+      "slug": "clustering-kmeans-dbscan",
+      "excerpt": "Aliquet nec, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris.",
+      "content": "Aliquet nec, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris.",
+      "author": "LjSoulimen",
+      "date": "2025-06-09",
+      "category": "Unsupervised Learning",
+      "tags": [
+        "Clustering",
+        "K-Means",
+        "DBSCAN",
+        "Hierarchical"
+      ],
+      "image": "clustering.jpg",
+      "read_time": "11 min"
+    },
+    {
+      "id": 13,
+      "title": "Feature Engineering : Sélection et Création de Variables",
+      "slug": "feature-engineering-selection",
+      "excerpt": "Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget.",
+      "content": "Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede. Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus.",
+      "author": "LjSoulimen",
+      "date": "2025-06-08",
+      "category": "Feature Engineering",
+      "tags": [
+        "Feature Engineering",
+        "Feature Selection",
+        "Data Preprocessing"
+      ],
+      "image": "feature-engineering.jpg",
+      "read_time": "10 min"
+    },
+    {
+      "id": 14,
+      "title": "Réseaux de Neurones Convolutifs (CNN) Expliqués",
+      "slug": "cnn-reseaux-neurones-convolutifs",
+      "excerpt": "In nibh mauris, cursus mattis, molestie a, gravida at, neque. Sed ante.",
+      "content": "In nibh mauris, cursus mattis, molestie a, gravida at, neque. Sed ante. Vivamus tortor. Duis mattis egestas metus. Aenean fermentum.",
+      "author": "LjSoulimen",
+      "date": "2025-06-07",
+      "category": "Deep Learning",
+      "tags": [
+        "CNN",
+        "Convolutional Networks",
+        "Image Processing"
+      ],
+      "image": "cnn-explained.jpg",
+      "read_time": "18 min"
+    },
+    {
+      "id": 15,
+      "title": "Recommender Systems : Collaborative vs Content-Based",
+      "slug": "recommender-systems-collaborative",
+      "excerpt": "Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci.",
+      "content": "Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh.",
+      "author": "LjSoulimen",
+      "date": "2025-06-06",
+      "category": "Recommender Systems",
+      "tags": [
+        "Recommender Systems",
+        "Collaborative Filtering",
+        "Content-Based"
+      ],
+      "image": "recommender-systems.jpg",
+      "read_time": "12 min"
+    },
+    {
+      "id": 16,
+      "title": "Reinforcement Learning : Q-Learning et Deep Q-Networks",
+      "slug": "reinforcement-learning-qlearning",
+      "excerpt": "Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit.",
+      "content": "Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien.",
+      "author": "LjSoulimen",
+      "date": "2025-06-05",
+      "category": "Reinforcement Learning",
+      "tags": [
+        "RL",
+        "Q-Learning",
+        "DQN",
+        "Game AI"
+      ],
+      "image": "reinforcement-learning.jpg",
+      "read_time": "20 min"
+    },
+    {
+      "id": 17,
+      "title": "Traitement d'Images : OpenCV et PIL en Python",
+      "slug": "traitement-images-opencv-pil",
+      "excerpt": "Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem.",
+      "content": "Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla.",
+      "author": "LjSoulimen",
+      "date": "2025-06-04",
+      "category": "Image Processing",
+      "tags": [
+        "OpenCV",
+        "PIL",
+        "Image Processing",
+        "Computer Vision"
+      ],
+      "image": "image-processing.jpg",
+      "read_time": "14 min"
+    },
+    {
+      "id": 18,
+      "title": "Big Data et Spark : Traitement de Données Massives",
+      "slug": "big-data-spark-traitement",
+      "excerpt": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia.",
+      "content": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Nam pretium turpis et arcu.",
+      "author": "LjSoulimen",
+      "date": "2025-06-03",
+      "category": "Big Data",
+      "tags": [
+        "Big Data",
+        "Apache Spark",
+        "Distributed Computing"
+      ],
+      "image": "big-data-spark.jpg",
+      "read_time": "17 min"
+    },
+    {
+      "id": 19,
+      "title": "AutoML : Automatisation du Machine Learning",
+      "slug": "automl-automatisation-ml",
+      "excerpt": "Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam.",
+      "content": "Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris.",
+      "author": "LjSoulimen",
+      "date": "2025-06-02",
+      "category": "AutoML",
+      "tags": [
+        "AutoML",
+        "Automated ML",
+        "H2O",
+        "Auto-sklearn"
+      ],
+      "image": "automl.jpg",
+      "read_time": "13 min"
+    },
+    {
+      "id": 20,
+      "title": "Graph Neural Networks : Analyse de Réseaux Complexes",
+      "slug": "graph-neural-networks-reseaux",
+      "excerpt": "Praesent adipiscing. Phasellus ullamcorper ipsum rutrum nunc. Nunc nonummy metus.",
+      "content": "Praesent adipiscing. Phasellus ullamcorper ipsum rutrum nunc. Nunc nonummy metus. Vestibulum volutpat pretium libero. Cras id dui. Aenean ut eros et nisl sagittis vestibulum.",
+      "author": "LjSoulimen",
+      "date": "2025-06-01",
+      "category": "Graph Neural Networks",
+      "tags": [
+        "GNN",
+        "Graph Networks",
+        "Network Analysis"
+      ],
+      "image": "graph-neural-networks.jpg",
+      "read_time": "19 min"
+    },
+    {
+      "id": 21,
+      "title": "Explainable AI : Rendre l'IA Interprétable",
+      "slug": "explainable-ai-interpretable",
+      "excerpt": "Nullam eu ante vel est convallis dignissim. Fusce suscipit, wisi nec facilisis facilisis.",
+      "content": "Nullam eu ante vel est convallis dignissim. Fusce suscipit, wisi nec facilisis facilisis, est dui fermentum leo, quis tempor ligula erat quis odio.",
+      "author": "LjSoulimen",
+      "date": "2025-05-31",
+      "category": "Explainable AI",
+      "tags": [
+        "XAI",
+        "Interpretability",
+        "LIME",
+        "SHAP"
+      ],
+      "image": "explainable-ai.jpg",
+      "read_time": "15 min"
+    },
+    {
+      "id": 22,
+      "title": "Transformer Models : BERT, GPT et leurs Applications",
+      "slug": "transformer-models-bert-gpt",
+      "excerpt": "Nunc dignissim risus id metus. Cras ornare tristique elit. Vivamus vestibulum ntulla nec ante.",
+      "content": "Nunc dignissim risus id metus. Cras ornare tristique elit. Vivamus vestibulum ntulla nec ante. Praesent placerat risus quis eros. Fusce pellentesque suscipit nibh.",
+      "author": "LjSoulimen",
+      "date": "2025-05-30",
+      "category": "Transformers",
+      "tags": [
+        "Transformers",
+        "BERT",
+        "GPT",
+        "Attention Mechanism"
+      ],
+      "image": "transformer-models.jpg",
+      "read_time": "22 min"
+    },
+    {
+      "id": 23,
+      "title": "Edge AI : Intelligence Artificielle sur Dispositifs Mobiles",
+      "slug": "edge-ai-dispositifs-mobiles",
+      "excerpt": "Integer vitae libero ac risus egestas placerat. Vestibulum ut erat. Aliquam lorem ante.",
+      "content": "Integer vitae libero ac risus egestas placerat. Vestibulum ut erat. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.",
+      "author": "LjSoulimen",
+      "date": "2025-05-29",
+      "category": "Edge AI",
+      "tags": [
+        "Edge AI",
+        "Mobile AI",
+        "TensorFlow Lite",
+        "ONNX"
+      ],
+      "image": "edge-ai.jpg",
+      "read_time": "16 min"
+    },
+    {
+      "id": 24,
+      "title": "Quantum Machine Learning : L'Avenir du Calcul",
+      "slug": "quantum-machine-learning",
+      "excerpt": "Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper.",
+      "content": "Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus.",
+      "author": "LjSoulimen",
+      "date": "2025-05-28",
+      "category": "Quantum ML",
+      "tags": [
+        "Quantum Computing",
+        "Quantum ML",
+        "Qubits",
+        "Future Tech"
+      ],
+      "image": "quantum-ml.jpg",
+      "read_time": "25 min"
+    }
+  ],
+  "categories": [
+    "IA Fondamentaux",
+    "Data Science",
+    "Machine Learning",
+    "Deep Learning",
+    "Computer Vision",
+    "NLP",
+    "MLOps",
+    "Éthique IA",
+    "Time Series",
+    "Unsupervised Learning",
+    "Feature Engineering",
+    "Recommender Systems",
+    "Reinforcement Learning",
+    "Image Processing",
+    "Big Data",
+    "AutoML",
+    "Graph Neural Networks",
+    "Explainable AI",
+    "Transformers",
+    "Edge AI",
+    "Quantum ML"
+  ]
+}

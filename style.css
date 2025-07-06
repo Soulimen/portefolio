@@ -1975,6 +1975,22 @@ body {
   content: '|';
   animation: blink 1s infinite;
 }
+.about__visual {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* bouton aligné à droite */
+  justify-content: flex-start;
+  gap: 24px;
+}
+
+
+
+.hero-cv-btn {
+  margin-top: 24px;
+  min-width: 220px;
+  align-self: flex-end; /* force le bouton à droite */
+  text-align: center;
+}
 
 @keyframes blink {
   0%, 50% { opacity: 1; }
@@ -2483,4 +2499,21 @@ html {
   color: var(--color-success);
   font-weight: bold;
   margin-top: 20px;
+}
+.hero-cv-btn {
+  display: inline-block;
+  margin-top: 18px;
+  background: var(--color-primary);
+  color: var(--color-btn-primary-text);
+  font-weight: 600;
+  padding: 10px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  box-shadow: 0 2px 10px rgba(93,165,179,0.10);
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+}
+.hero-cv-btn:hover {
+  background: var(--color-primary-hover);
+  color: var(--color-background);
+  transform: translateY(-2px) scale(1.03);
 }

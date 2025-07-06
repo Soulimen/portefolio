@@ -25,6 +25,35 @@
             src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
     </script>
 </head>
+
+
+
+<!-- Modal de réservation -->
+<div id="reservationModal" class="modal hidden">
+  <div class="modal-content">
+    <span class="close-modal" id="closeReservationModal">&times;</span>
+    <h3>Réserver un service</h3>
+    <form id="reservationForm" autocomplete="off" action="https://formspree.io/f/mldnkpaq" method="POST">
+      <label for="res-name">Nom Prénom</label>
+      <input type="text" id="res-name" name="name" required>
+
+      <label for="res-email">Adresse email</label>
+      <input type="email" id="res-email" name="email" required>
+
+      <label for="res-phone">Numéro de téléphone</label>
+      <input type="tel" id="res-phone" name="phone" required pattern="^[0-9+\s().-]{7,}$">
+
+      <label for="res-message">Votre demande</label>
+      <textarea id="res-message" name="message" rows="5" required placeholder="Décrivez votre besoin..."></textarea>
+
+      <button type="submit" class="btn btn--primary">Envoyer</button>
+    </form>
+    <div id="reservationSuccess" class="hidden">
+      <p>Merci, votre demande a bien été envoyée !</p>
+    </div>
+  </div>
+</div>
+
 <body>
     <!-- Header -->
     <header class="header">

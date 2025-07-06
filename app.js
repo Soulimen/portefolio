@@ -26,7 +26,7 @@ const articlesData = [
   $$\\sigma(x) = \\frac{1}{1 + e^{-x}}$$
   
   <p>Pour un neurone simple, la sortie est calculée comme :</p>
-  $$y = \\sigma\\left(\\sum_{i=1}^{n} w_i x_i + b\\right)$$
+  
   
   <p>où \\(w_i\\) représente les poids et \\(b\\) le biais.</p>
 `,
@@ -561,20 +561,7 @@ function setupEventListeners() {
     }
   });
 
-  // Réservation de services (simulation)
-  document.querySelectorAll('.service-card__cta').forEach(button => {
-    button.addEventListener('click', (e) => {
-      const originalText = e.target.textContent;
-      e.target.textContent = 'Réservation en cours...';
-      e.target.disabled = true;
-      
-      setTimeout(() => {
-        alert('Merci pour votre intérêt ! Je vous contacterai bientôt pour discuter de votre projet.');
-        e.target.textContent = originalText;
-        e.target.disabled = false;
-      }, 2000);
-    });
-  });
+
 
   // Formulaire de newsletter
   const newsletterForm = document.getElementById('newsletterForm');
@@ -688,5 +675,56 @@ window.MathJax = {
     }
   }
 };
+
+
+
+// Ouvrir le formulaire modal au clic sur "Réserver un service"
+document.addEventListener('DOMContentLoaded', function() {
+  // Si plusieurs boutons, adapte la classe ou l'id ci-dessous
+  document.querySelectorAll('.service-card__cta, .btn--primary-reservation').forEach(btn => {
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      document.getElementById('reservationModal').classList.remove('hidden');
+    });
+  });
+
+  // Fermer le modal
+  document.getElementById('closeReservationModal').onclick = function() {
+    document.getElementById('reservationModal').classList.add('hidden');
+    document.getElementById('reservationForm').reset();
+    document.getElementById('reservationSuccess').classList.add('hidden');
+    document.getElementById('reservationForm').classList.remove('hidden');
+  };
+
+  // Fermer en cliquant sur le fond
+  document.getElementById('reservationModal').addEventListener('click', function(e) {
+    if (e.target === this) {
+      this.classList.add('hidden');
+      document.getElementById('reservationForm').reset();
+      document.getElementById('reservationSuccess').classList.add('hidden');
+      document.getElementById('reservationForm').classList.remove('hidden');
+    }
+  });
+});
+
+document.getElementById('reservationForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  const form = this;
+  fetch(form.action, {
+    method: 'POST',
+    body: new FormData(form),
+    headers: { 'Accept': 'application/json' }
+  }).then(response => {
+    if (response.ok) {
+      form.classList.add('hidden');
+      document.getElementById('reservationSuccess').classList.remove('hidden');
+    } else {
+      alert("Erreur lors de l'envoi. Essayez plus tard.");
+    }
+  }).catch(error => {
+    alert("Erreur lors de l'envoi. Essayez plus tard.");
+  });
+});
+
 // Démarrer l'application quand le DOM est chargé
 document.addEventListener('DOMContentLoaded', init);

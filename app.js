@@ -4,7 +4,7 @@ const articlesData = [
   "id": 1,
   "title": "Stock Market Weather: Advanced Data Science and Project Management for Financial Forecasting",
   "slug": "stock-market-weather-advanced-data-science",
-  "image": "images/stock-market-weather.jpg",
+  "image": "images/stockmarket.png",
   "excerpt": "Dive into the Stock Market Weather project: a robust blend of advanced mathematics, technical analysis, and rigorous project management, designed for large-scale, high-performance financial forecasting.",
   content: `# Stock Market Weather: Advanced Data Science and Project Management for Financial Forecasting
   <div style="text-align: center;">

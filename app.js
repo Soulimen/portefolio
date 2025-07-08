@@ -1,18 +1,23 @@
 // Données des articles
 const articlesData = [
-  {
-    "id": 1,
-    "title": "Introduction à l'Intelligence Artificielle : Les Fondamentaux",
-    "slug": "introduction-ia-fondamentaux",
-    "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    content: ` #HARMONIE RESEAU NEUREONEs Les réseaux de neurones utilisent la fonction d'activation sigmoïde définie par : $$\\sigma(x) = \\frac{1}{1 + e^{-x}}$$ `,
-    "author": "LjSoulimen",
-    image:"images/data-viz.jpg",
-    "date": "2025-06-20",
-    "category": "IA Fondamentaux",
-    "tags": ["IA", "Machine Learning", "Basics"],
-    "read_time": "5 min"
-  },
+{
+  "id": 1,
+  "title": "Stock Market Weather: Advanced Data Science and Project Management for Financial Forecasting",
+  "slug": "stock-market-weather-advanced-data-science",
+  "image": "images/stock-market-weather.jpg",
+  "excerpt": "Dive into the Stock Market Weather project: a robust blend of advanced mathematics, technical analysis, and rigorous project management, designed for large-scale, high-performance financial forecasting.",
+  content: `# Stock Market Weather: Advanced Data Science and Project Management for Financial Forecasting
+  <div style="text-align: center;">
+  <img src="images/weathstock.png" alt="Explication 1" style="width:100%;max-width:500px;margin:16px 0;">
+</div>
+  **Stock Market Weather** stands out as an ambitious, large-scale data science initiative, uniting advanced mathematical modeling with rigorous project management. The goal: deliver reliable, scalable, and actionable stock market predictions for thousands of assets every day.\n## 1. Robust Project Management Approach\n### Structured Methodology\n- **Agile and Iterative Development:** The project is managed using Agile principles, with sprints dedicated to data engineering, model development, and infrastructure optimization.\n- **Clear Work Breakdown Structure (WBS):** Tasks are divided into modules—data acquisition, signal processing, machine learning, infrastructure, and validation—each with defined deliverables and timelines.\n- **Version Control and Continuous Integration:** All code is versioned (e.g., Git), with automated testing and deployment pipelines ensuring code quality and reproducibility.\n- **Scalability and Resource Allocation:** The architecture is designed to scale horizontally across servers and GPUs, with workload balancing and monitoring for optimal resource use.\n- **Documentation and Knowledge Sharing:** Comprehensive technical documentation and regular team reviews guarantee maintainability and knowledge transfer.\n### Risk Management\n- **Data Quality Assurance:** Automated checks and anomaly detection on incoming data streams.\n- **Model Validation:** Systematic backtesting and post-diction on rolling three-year windows to ensure predictive reliability.\n- **Performance Monitoring:** Real-time dashboards track computational loads, prediction accuracy, and infrastructure health.\n## 2. Advanced Mathematical and Analytical Foundations\n### Mathematical Rigor\n- **Fourier Analysis:** Each price series is decomposed using discrete Fourier transforms, with the optimal number of harmonics selected via information criteria (e.g., AIC/BIC) to capture underlying cycles and filter noise.\n- **Pattern Recognition:** Mathematical algorithms detect specific curve patterns (double tops, triple bottoms, triangles) by analyzing reconstructed signals, leveraging geometric and statistical criteria for pattern validation.\n- **Clustering Algorithms:** KMeans clustering segments extremums extracted from Fourier curves, identifying statistically significant price zones and targets.\n- **Divergence Detection:** Quantitative methods identify divergences between price and technical indicators (MACD, RSI, Stochastic), using correlation analysis and signal processing to anticipate major trend reversals.\n- **Candlestick Pattern Analysis:** Algorithmic detection of complex candlestick patterns (Dark Cloud Cover, Morning Star, Hammer, Engulfing, Harami, Evening Star) is based on strict mathematical definitions and multi-period context analysis.\n### Artificial Intelligence and Deep Learning\n- **News Scoring Model:** A custom deep learning model processes financial news, using natural language processing (NLP) to assign impact scores to assets. The model is trained on labeled datasets and evaluated using precision, recall, and F1-score.\n- **Model Integration:** Predictions from technical and news-based models are combined using ensemble methods to enhance robustness and accuracy.\n### Computational Excellence\n- **C++ Core, MPI & CUDA:** All algorithms are implemented in C++ for performance, with distributed computation via MPI and GPU acceleration through CUDA. This ensures daily processing of tens of thousands of assets within strict time constraints.\n- **Distributed Data Storage:** Data is partitioned and replicated across nodes, with failover and redundancy mechanisms for reliability.\n## 3. Validation and Continuous Improvement\n- **Post-Diction:** Systematic application of predictive models to historical data (rolling three-year windows) validates accuracy and identifies areas for refinement.\n- **Performance Metrics:** Key metrics (RMSE, precision, recall, latency) are tracked and reported for each prediction cycle.\n- **Feedback Loops:** User and stakeholder feedback is integrated into model updates and project planning.\n## Conclusion\n**Stock Market Weather** exemplifies a powerful synergy of advanced mathematics, machine learning, and professional project management. Its rigorous structure, mathematical sophistication, and scalable infrastructure make it a benchmark for modern financial forecasting projects—combining scientific depth with operational excellence.`,
+  "author": "Laouej Soulimen",
+  "date": "2024-07-08",
+  "category": "Data Science",
+  "tags": ["Stock Market", "Data Science", "Technical Analysis", "Project Management", "Mathematics", "Machine Learning", "AI"],
+  "read_time": "14 min"
+},
+
   {
     "id": 2,
     "title": "Data Science et Python : Guide Complet pour Débutants",

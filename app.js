@@ -86,7 +86,7 @@ Conclusion.
 
 // Liste des catégories
 const categories = [
-  "Tous",
+  "All",
   "IA Fondamentaux",
   "Data Science", 
   "Machine Learning",
@@ -113,7 +113,7 @@ const categories = [
 
 // État global
 let currentPage = 1;
-let currentCategory = 'Tous';
+let currentCategory = 'All';
 let searchQuery = '';
 let currentRoute = '';
 let currentArticleSlug = '';
@@ -163,13 +163,14 @@ function getIconForCategory(category) {
     'Edge AI': '📱',
     'Quantum ML': '⚛️',
     'Data Visualization': '📊'
+    
   };
   return iconMap[category] || '📄';
 }
 
 function formatDate(dateString) {
   const date = new Date(dateString);
-  return date.toLocaleDateString('fr-FR', {
+  return date.toLocaleDateString('en-EN', {
     year: 'numeric',
     month: 'long',
     day: 'numeric'
@@ -405,7 +406,7 @@ function filterArticles() {
   let filtered = articlesData;
 
   // Filtrer par catégorie
-  if (currentCategory !== 'Tous') {
+  if (currentCategory !== 'All') {
     filtered = filtered.filter(article => article.category === currentCategory);
   }
 

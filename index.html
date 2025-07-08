@@ -32,24 +32,24 @@
 <div id="reservationModal" class="modal hidden">
   <div class="modal-content">
     <span class="close-modal" id="closeReservationModal">&times;</span>
-    <h3>Réserver un service</h3>
+    <h3>Book a Service</h3>
     <form id="reservationForm" autocomplete="off" action="https://formspree.io/f/mldnkpaq" method="POST">
-      <label for="res-name">Nom Prénom</label>
+      <label for="res-name">Full Name</label>
       <input type="text" id="res-name" name="name" required>
 
-      <label for="res-email">Adresse email</label>
+      <label for="res-email">Email Adress</label>
       <input type="email" id="res-email" name="email" required>
 
-      <label for="res-phone">Numéro de téléphone</label>
+      <label for="res-phone">Phone Number</label>
       <input type="tel" id="res-phone" name="phone" required pattern="^[0-9+\s().-]{7,}$">
 
-      <label for="res-message">Votre demande</label>
-      <textarea id="res-message" name="message" rows="5" required placeholder="Décrivez votre besoin..."></textarea>
+      <label for="res-message">Your Request</label>
+      <textarea id="res-message" name="message" rows="5" required placeholder="Describe your needs..."></textarea>
 
-      <button type="submit" class="btn btn--primary">Envoyer</button>
+      <button type="submit" class="btn btn--primary">Send</button>
     </form>
     <div id="reservationSuccess" class="hidden">
-      <p>Merci, votre demande a bien été envoyée !</p>
+      <p>Thank you, your request has been sent successfully!</p>
     </div>
   </div>
 </div>
@@ -60,22 +60,19 @@
         <div class="container">
             <div class="header__content">
                 <div class="header__logo">
-                    <img src="https://pplx-res.cloudinary.com/image/upload/v1750580326/gpt4o_images/ce0oo9uojqwdmskqxm0a.png" alt="LjSoulimen Logo" class="logo-img">
+                    <img src="images/logo.png" alt="LjSoulimen Logo" class="logo-img">
                     <span class="logo-text">Laouej Soulimen</span>
                 </div>
                 <nav class="header__nav">
                     <ul class="nav-list">
-                        <li><a href="#/" class="nav-link">Accueil</a></li>
+                        <li><a href="#/" class="nav-link">Home</a></li>
                         <li><a href="#/blog" class="nav-link">Blog</a></li>
                         <li><a href="#/services" class="nav-link">Services</a></li>
-                        <li><a href="#/about" class="nav-link">À Propos</a></li>
+                        <li><a href="#/about" class="nav-link">About</a></li>
                         <li><a href="#/contact" class="nav-link">Contact</a></li>
                     </ul>
                 </nav>
-                <select id="langSwitch">
-                    <option value="fr">Français</option>
-                    <option value="en">English</option>
-                </select>
+
 
                 <div class="header__search">
                     <button class="search-btn" id="searchToggle">
@@ -99,15 +96,15 @@
                     <div class="hero__content">
                         <div class="hero__text">
                             <h1 class="hero__title">
-                                Transformez vos données en 
-                                <span class="accent-text">insights intelligents</span>
+                                Turn your data into 
+                                <span class="accent-text">smart insights</span>
                             </h1>
                             <p class="hero__subtitle">
-                                Expert en Data Science et Intelligence Artificielle, je vous aide à exploiter le potentiel de vos données pour révolutionner votre business.
+                                Data Science and Artificial Intelligence expert, I help you unlock the potential of your data to revolutionize your business.
                             </p>
                             <div class="hero__actions">
-                                <a href="#/services" class="btn btn--primary">Découvrir mes services</a>
-                                <a href="#/blog" class="btn btn--secondary">Lire le blog</a>
+                                <a href="#/services" class="btn btn--primary">Discover my services</a>
+                                <a href="#/blog" class="btn btn--secondary">Read the blog</a>
 
                             </div>
                         </div>
@@ -124,17 +121,17 @@
                 <div class="container">
                     <div class="section-header">
                         <h2 class="section-title">Blog & Ressources</h2>
-                        <p class="section-subtitle">Articles techniques et guides pratiques sur l'IA et la Data Science</p>
+                        <p class="section-subtitle">Technical articles and practical guides on AI and Data Science projects</p>
                     </div>
                     
                     <!-- Search and Filter -->
                     <div class="blog__controls">
                         <div class="search-container" id="searchContainer">
-                            <input type="text" id="searchInput" class="search-input" placeholder="Rechercher dans les articles...">
+                            <input type="text" id="searchInput" class="search-input" placeholder="Search articles...">
                         </div>
                         <div class="filter-container">
                             <select id="categoryFilter" class="category-filter">
-                                <option value="Tous">Toutes les catégories</option>
+                                <option value="Tous">All categories</option>
                             </select>
                         </div>
                     </div>
@@ -155,30 +152,30 @@
             <section id="services" class="services">
                 <div class="container">
                     <div class="section-header">
-                        <h2 class="section-title">Mes Services</h2>
-                        <p class="section-subtitle">Solutions sur mesure pour vos projets Data Science et IA</p>
+                        <h2 class="section-title">My Services</h2>
+                        <p class="section-subtitle">Tailor-made solutions for your Data Science and AI projects</p>
                     </div>
                     <div class="services__grid">
                         <div class="service-card">
                             <div class="service-card__icon">📊</div>
-                            <h3 class="service-card__title">Analyse de Données</h3>
-                            <p class="service-card__description">Analyse complète de vos données avec insights actionables et recommandations stratégiques</p>
-                            <div class="service-card__price">À partir de 250€</div>
-                            <button class="btn btn--primary service-card__cta">Réserver une session</button>
+                            <h3 class="service-card__title">Data Analysis</h3>
+                            <p class="service-card__description">Comprehensive analysis of your data with actionable insights and strategic recommendations</p>
+                            <div class="service-card__price">From 250€</div>
+                            <button class="btn btn--primary service-card__cta">Book a Session</button>
                         </div>
                         <div class="service-card">
                             <div class="service-card__icon">🤖</div>
-                            <h3 class="service-card__title">Automatisation IA</h3>
-                            <p class="service-card__description">Développement de solutions d'automatisation basées sur l'IA pour optimiser vos processus</p>
-                            <div class="service-card__price">À partir de 200€</div>
-                            <button class="btn btn--primary service-card__cta">Réserver une session</button>
+                            <h3 class="service-card__title">AI Automation</h3>
+                            <p class="service-card__description">Development of AI-based automation solutions to optimize your processes</p>
+                            <div class="service-card__price">From 200€</div>
+                            <button class="btn btn--primary service-card__cta">Book a Session</button>
                         </div>
                         <div class="service-card">
                             <div class="service-card__icon">💡</div>
-                            <h3 class="service-card__title">Consultation Stratégique IA</h3>
-                            <p class="service-card__description">Conseil stratégique pour l'intégration de l'IA dans votre entreprise et votre écosystème</p>
-                            <div class="service-card__price">À partir de 300€</div>
-                            <button class="btn btn--primary service-card__cta">Réserver une session</button>
+                            <h3 class="service-card__title">Strategic AI Consulting</h3>
+                            <p class="service-card__description">Strategic advice for integrating AI into your business and ecosystem</p>
+                            <div class="service-card__price">From 300€</div>
+                            <button class="btn btn--primary service-card__cta">Book a Session</button>
                         </div>
                     </div>
                 </div>
@@ -189,32 +186,30 @@
                 <div class="container">
                     <div class="about__content">
                         <div class="about__text">
-                            <h2 class="section-title">À Propos</h2>
+                            <h2 class="section-title">About</h2>
                             <p class="about__description">
-                                Passionné par l'Intelligence Artificielle et la Data Science, je transforme les données complexes en solutions concrètes. 
-                                Avec une expertise approfondie en Machine Learning, Deep Learning et traitement de données massives, 
-                                j'accompagne les entreprises dans leur transformation digitale.
+                                Passionate about Artificial Intelligence and Data Science, I turn complex data into concrete solutions.
+                                With deep expertise in Machine Learning, Deep Learning, and big data processing, I support companies in their digital transformation.
                             </p>
                             <p class="about__description">
-                                Mon approche combine rigueur scientifique et pragmatisme business pour livrer des projets qui génèrent un impact réel. 
-                                Que ce soit pour de l'analyse prédictive, de l'automatisation intelligente ou de l'optimisation de processus, 
-                                je mets mon expertise au service de votre croissance.
+                                My approach combines scientific rigor and business pragmatism to deliver projects that generate real impact.
+                                Whether for predictive analysis, intelligent automation, or process optimization, I put my expertise at the service of your growth.
                             </p>
                             <div class="about__skills">
                                 <div class="skill-tag">Python</div>
                                 <div class="skill-tag">TensorFlow</div>
                                 <div class="skill-tag">PyTorch</div>
-                                <div class="skill-tag">Réappentissage</div>
-                                <div class="skill-tag">IA générative</div>
-                                <div class="skill-tag">Agent IA</div>
-                                <div class="skill-tag">Serveur MCP</div>
+                                <div class="skill-tag">Retraining</div>
+                                <div class="skill-tag">Generative IA</div>
+                                <div class="skill-tag">IA Agent</div>
+                                <div class="skill-tag">MCP Server</div>
                                 <div class="skill-tag">Ragging</div>
                                 <div class="skill-tag">Scikit-learn</div>
                                 <div class="skill-tag">Pandas</div>
                                 <div class="skill-tag">Docker</div>
                                 <div class="skill-tag">GCP</div>
                                 <div class="skill-tag">MLOps</div>
-                                <div class="skill-tag">Gestion de projets</div>
+                                <div class="skill-tag">Project Management</div>
                             </div>
                         </div>
                         <div class="about__visual">
@@ -241,7 +236,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <a href="documents/CV.pdf" download class="btn btn--secondary hero-cv-btn">Télécharger mon CV</a>
+                            <a href="documents/CV.pdf" download class="btn btn--secondary hero-cv-btn">Download my CV</a>
 
                         </div>
                         
@@ -256,7 +251,7 @@
                 <div class="container">
                     <!-- Breadcrumb -->
                     <nav class="breadcrumb">
-                        <a href="#/" class="breadcrumb-link">Accueil</a>
+                        <a href="#/" class="breadcrumb-link">Home</a>
                         <span class="breadcrumb-separator">></span>
                         <a href="#/blog" class="breadcrumb-link">Blog</a>
                         <span class="breadcrumb-separator">></span>
@@ -267,13 +262,13 @@
                     <article class="article-detail">
                         <header class="article-header">
                             <div class="article-meta">
-                                <span class="article-category" id="article-category">Catégorie</span>
+                                <span class="article-category" id="article-category">Category</span>
                                 <span class="article-date" id="article-date">Date</span>
-                                <span class="article-read-time" id="article-read-time">Temps de lecture</span>
+                                <span class="article-read-time" id="article-read-time">Reading Time</span>
                             </div>
-                            <h1 class="article-title" id="article-title">Titre de l'article</h1>
+                            <h1 class="article-title" id="article-title">Article Title</h1>
                             <div class="article-author">
-                                <span>Par <strong id="article-author">Auteur</strong></span>
+                                <span>By <strong id="article-author">Author</strong></span>
                             </div>
                         </header>
 
@@ -288,7 +283,7 @@
                             
                             <div class="article-actions">
                                 <button class="btn btn--secondary" onclick="goBackToBlog()">
-                                    ← Retour au blog
+                                    ← Back to blog
                                 </button>
                             </div>
                         </footer>
@@ -296,7 +291,7 @@
 
                     <!-- Articles connexes -->
                     <section class="related-articles">
-                        <h3>Articles connexes</h3>
+                        <h3>Related Articles</h3>
                         <div class="related-articles__grid" id="related-articles">
                             <!-- Les articles connexes seront insérés ici -->
                         </div>
@@ -314,7 +309,7 @@
                     <div class="footer__brand">
                         <img src="https://pplx-res.cloudinary.com/image/upload/v1750580326/gpt4o_images/ce0oo9uojqwdmskqxm0a.png" alt="LjSoulimen Logo" class="footer-logo">
                         <h3>LAOUEJ Soulimen</h3>
-                        <p>Expert en Data Science & IA</p>
+                        <p>Data Science & IA engineering Expert</p>
                     </div>
                     <div class="footer__contact">
                         <h4>Contact</h4>
@@ -333,7 +328,7 @@
                     </div>
                 </div>
                 <div class="footer__bottom">
-                    <p>&copy; 2025 LAOUEJ Soulimen. Tous droits réservés.</p>
+                    <p>&copy; 2025 LAOUEJ Soulimen. All rights reserved.</p>
                     <div class="social-links">
                         
                         <a href="#" target="_blank">   </a>

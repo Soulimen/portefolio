@@ -15,73 +15,23 @@ const articlesData = [
   "date": "2024-07-08",
   "category": "Data Science",
   "tags": ["Stock Market", "Data Science", "Technical Analysis", "Project Management", "Mathematics", "Machine Learning", "AI"],
-  "read_time": "14 min"
+  "read_time": "8 min"
 },
 
-  {
-    "id": 2,
-    "title": "Data Science et Python : Guide Complet pour Débutants",
-    "slug": "data-science-python-guide",
-    image:"images/data-viz.jpg",
-    "excerpt": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
-    content: `
-  <h1>HARMONIE RÉSEAUX DE NEURONES</h1>
-  
-  <p>Les réseaux de neurones utilisent la fonction d'activation sigmoïde définie par :</p>
-  $$\\sigma(x) = \\frac{1}{1 + e^{-x}}$$
-  
-  <p>Pour un neurone simple, la sortie est calculée comme :</p>
-  
-  
-  <p>où \\(w_i\\) représente les poids et \\(b\\) le biais.</p>
-`,
+{
+  "id": 2,
+  "title": "Blockchain Infrastructure at Bourse Direct: Securing Financial Transactions",
+  "slug": "blockchain-infrastructure-bourse-direct",
+  "image": "images/blackchainprez.png",
+  "excerpt": "Discover how Bourse Direct implemented a robust blockchain infrastructure to ensure integrity, traceability, and security for all financial transactions. Explore the project's cryptographic architecture, consensus mechanisms, and operational impact.",
+  "content": "# Blockchain Infrastructure at Bourse Direct: Securing Financial Transactions\n<div style=\"text-align: center;\">\n  <img src=\"images/block.png\" alt=\"Blockchain Infrastructure\" style=\"width:100%;max-width:500px;margin:16px 0;\">\n</div>\nThe **Blockchain Infrastructure** project at Bourse Direct was launched to develop and deploy a secure, distributed ledger system, ensuring the **integrity** and **traceability** of all financial transactions within the company. This initiative addresses the growing demand for transparency, security, and operational efficiency in the financial sector.\n## 1. Core Objectives\n- **Transaction Integrity:** Guarantee that every transaction is immutable and protected from unauthorized modifications.\n- **Enhanced Traceability:** Provide detailed, auditable tracking of each transaction from initiation to completion.\n- **Strengthened Security:** Shield sensitive financial data against tampering and cyber threats.\n- **Distributed Validation:** Enable multiple nodes to validate transactions, eliminating single points of failure and increasing system resilience.\n## 2. Technical Architecture\n### Cryptographic Foundations\n- **Hash Functions (SHA256):** Each block’s data is hashed, producing a unique fingerprint. Any change in input radically alters the output hash, ensuring data integrity. Hashing is irreversible, making it impossible to reconstruct original data from the hash.\n- **Block Structure:** Every block contains a batch of transactions, a timestamp, its own hash, the hash of the previous block, and a nonce for proof-of-work.\n- **Chaining of Blocks:** Each block is cryptographically linked to its predecessor, forming an unbreakable chain. Altering any block breaks the chain’s integrity, as subsequent hashes no longer match.\n- **Distributed Ledger:** The blockchain is replicated across multiple nodes within Bourse Direct, providing redundancy and high availability.\n### Consensus Mechanism\n- **Proof of Work (PoW):** To add a new block, nodes must solve a computational puzzle, making unauthorized changes computationally impractical. The difficulty of the puzzle is dynamically adjusted to maintain a consistent block creation rate.\n- **Nonce Calculation:** The system iteratively searches for a nonce value that produces a hash with a required number of leading zeros, ensuring the block meets the current difficulty level.\n### Security and Compliance\n- **Immutability:** Once validated, blocks cannot be altered without redoing the proof-of-work for all subsequent blocks, providing robust protection against tampering.\n- **Transparency:** Authorized users can view the blockchain, ensuring accountability and auditability.\n- **Access Control:** Only authenticated users and systems can initiate or validate transactions, preventing unauthorized access.\n- **Data Privacy:** Sensitive personal data is stored outside the blockchain, ensuring compliance with privacy regulations (e.g., GDPR).\n## 3. Implementation Highlights\n- **High-Performance Computing:** The infrastructure leverages powerful servers and GPU clusters to efficiently handle the computational demands of proof-of-work.\n- **Automated Monitoring:** Real-time dashboards track hash rates, block creation times, and system health, enabling proactive maintenance and rapid incident response.\n- **Scalability:** The architecture is designed for horizontal scalability, accommodating increased transaction volumes and additional nodes as business needs grow.\n## 4. Business Impact\n- **Regulatory Compliance:** The blockchain infrastructure provides an immutable audit trail, supporting compliance with financial regulations.\n- **Operational Efficiency:** Automated validation and distributed consensus reduce manual intervention and minimize the risk of human error.\n- **Customer Trust:** Enhanced transparency and security foster greater confidence among clients and partners.\n## Conclusion\nThe **Blockchain Infrastructure** project at Bourse Direct marks a significant leap in securing and streamlining financial operations. By combining advanced cryptographic techniques, distributed systems, and robust project management, Bourse Direct now benefits from a transparent, tamper-proof, and highly resilient transaction platform—setting a new standard for financial integrity and traceability.",
+  "author": "Laouej Soulimen",
+  "date": "2025-05-09",
+  "category": "Blockchain",
+  "tags": ["Blockchain", "Security", "Financial Transactions", "Distributed Ledger", "Cryptography", "Project Management"],
+  "read_time": "10 min"
+}
 
-    "author": "LjSoulimen",
-    "date": "2025-06-19",
-    "category": "Data Science",
-    "tags": ["Python", "Data Science", "Pandas", "NumPy"],
-    "read_time": "8 min"
-  },
-  {
-    "id": 3,
-    "title": "Machine Learning : Algorithmes Supervisés vs Non-Supervisés",
-    "slug": "ml-supervise-non-supervise",
-    image:"images/data-viz.jpg",
-    "excerpt": "Fusce consequat. Nulla nisl. Nunc nisl. Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi.",
-    "content": "# Machine Learning : Algorithmes Supervisés vs Non-Supervisés\n\n## Qu'est-ce que le Machine Learning ?\n\nLe Machine Learning est une branche de l'Intelligence Artificielle qui permet aux machines d'apprendre et de prendre des décisions sans être explicitement programmées pour chaque tâche.\n\n## Apprentissage Supervisé\n\n### Définition\nL'apprentissage supervisé utilise des données étiquetées pour entraîner le modèle. Le modèle apprend la relation entre les variables d'entrée et la variable cible.\n\n### Types d'algorithmes supervisés\n\n#### Classification\n- **Objectif** : Prédire une catégorie ou classe\n- **Exemples** : Détection de spam, diagnostic médical\n- **Algorithmes** : Random Forest, SVM, Naive Bayes\n\n#### Régression\n- **Objectif** : Prédire une valeur numérique continue\n- **Exemples** : Prix immobilier, température\n- **Algorithmes** : Régression linéaire, Random Forest Regressor\n\n### Exemple pratique\n\n```python\nfrom sklearn.ensemble import RandomForestClassifier\nfrom sklearn.model_selection import train_test_split\nfrom sklearn.metrics import accuracy_score\n\n# Séparation des données\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)\n\n# Entraînement\nmodel = RandomForestClassifier()\nmodel.fit(X_train, y_train)\n\n# Prédiction\ny_pred = model.predict(X_test)\naccuracy = accuracy_score(y_test, y_pred)\nprint(f'Précision: {accuracy}')\n```\n\n## Apprentissage Non-Supervisé\n\n### Définition\nL'apprentissage non-supervisé travaille avec des données non étiquetées pour découvrir des patterns cachés ou des structures dans les données.\n\n### Types d'algorithmes non-supervisés\n\n#### Clustering\n- **Objectif** : Grouper des données similaires\n- **Exemples** : Segmentation client, regroupement de documents\n- **Algorithmes** : K-Means, DBSCAN, Hierarchical Clustering\n\n#### Réduction de dimensionnalité\n- **Objectif** : Simplifier les données en conservant l'information importante\n- **Exemples** : Visualisation, compression\n- **Algorithmes** : PCA, t-SNE, UMAP\n\n### Exemple de clustering\n\n```python\nfrom sklearn.cluster import KMeans\nimport matplotlib.pyplot as plt\n\n# Application de K-Means\nkmeans = KMeans(n_clusters=3)\ncluster_labels = kmeans.fit_predict(X)\n\n# Visualisation\nplt.scatter(X[:, 0], X[:, 1], c=cluster_labels)\nplt.title('Résultats du clustering K-Means')\nplt.show()\n```\n\n## Comparaison\n\n| Aspect | Supervisé | Non-Supervisé |\n|--------|-----------|---------------|\n| Données | Étiquetées | Non étiquetées |\n| Objectif | Prédiction | Découverte de patterns |\n| Validation | Métriques classiques | Plus complexe |\n| Applications | Classification, Régression | Clustering, Réduction dimensionnalité |\n\n## Quand utiliser quoi ?\n\n### Apprentissage Supervisé\n- Quand vous avez des données étiquetées\n- Pour des tâches de prédiction précises\n- Quand l'objectif est clairement défini\n\n### Apprentissage Non-Supervisé\n- Pour explorer des données inconnues\n- Découvrir des patterns cachés\n- Préprocessing avant l'apprentissage supervisé\n\n## Conclusion\n\nLe choix entre apprentissage supervisé et non-supervisé dépend de vos données et objectifs. Souvent, une approche hybride combinant les deux peut être la plus efficace.",
-    "author": "LjSoulimen",
-    "date": "2025-06-18",
-    "category": "Machine Learning",
-    "tags": ["ML", "Supervised Learning", "Unsupervised Learning"],
-    "read_time": "12 min"
-  },
-  {
-    id:4,
-    title:"Les harmonies de Fourier en Bourse",
-    image:"images/fourier.jpg",
-    slug:"Fourier-for-trading",
-    excerpt:"prédire la bourse au travers des harmonies de fourier, un pas gigantesque",
-    content: `
-# Titre de l'article
-
-Voici une introduction.
-Un paragraphe explicatif.
-
-<img src="images/fourier.jpg" alt="Explication 1" style="width:100%;max-width:500px;margin:16px 0;">
-<img src="images/fourier.jpg" alt="Explication 1" style="width:100%;max-width:500px;margin:16px 0;">
-<img src="images/fourier.jpg" alt="Explication 1" style="width:100%;max-width:500px;margin:16px 0;">
-Encore du texte.
-
-![Graphique](images/fourier.jpg)
-
-Conclusion.
-`,
-"author": "LjSoulimen",
-    "date": "2025-06-18",
-    "category": "Machine Learning",
-    "tags": ["ML", "Supervised Learning", "Unsupervised Learning"],
-    "read_time": "12 min"
-  }
 ];
 
 // Liste des catégories
@@ -163,7 +113,7 @@ function getIconForCategory(category) {
     'Edge AI': '📱',
     'Quantum ML': '⚛️',
     'Data Visualization': '📊'
-    
+
   };
   return iconMap[category] || '📄';
 }

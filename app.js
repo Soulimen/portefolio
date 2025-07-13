@@ -17,7 +17,6 @@ const articlesData = [
   "tags": ["Stock Market", "Data Science", "Technical Analysis", "Project Management", "Mathematics", "Machine Learning", "AI"],
   "read_time": "8 min"
 },
-
 {
   "id": 2,
   "title": "Blockchain Infrastructure Development: Securing Financial Transactions",
@@ -29,7 +28,7 @@ const articlesData = [
   "date": "2025-05-09",
   "category": "Blockchain",
   "tags": ["Blockchain", "Security", "Financial Transactions", "Distributed Ledger", "Cryptography", "Project Management"],
-  "read_time": "10 min"
+  "read_time": "6 min"
 },
 {
   "id": 3,
@@ -42,10 +41,21 @@ const articlesData = [
   "date": "2025-01-12",
   "category": "AI & Productivity",
   "tags": ["AI", "Productivity", "LLM", "Office Automation", "Image Generation", "Conversational Agent", "Open Source", "Data Privacy"],
-  "read_time": "11 min"
+  "read_time": "5 min"
+},
+{
+  "id": 4,
+  "title": "High-Frequency Arbitrage Trading: Parallelized Algorithmic Project for French Markets",
+  "slug": "tradingalgo",
+  "image": "images/algotrader.jpeg",
+  "excerpt": "Discover the design and implementation of a high-frequency arbitrage trading system for French equities, leveraging parallel computing and ultra-fast market data analysis.",
+  "content": "# High-Frequency Arbitrage Trading: Parallelized Algorithmic Project for French Markets\n<div style=\"text-align: center;\"><img src=\"images/arbitrage.png\" alt=\"Arbitrage Trading\" style=\"width:100%;max-width:500px;margin:16px 0;\"></div>\n**In 2022, I participated in the rapid development of a cutting-edge algorithmic trading project focused on high-frequency arbitrage between French equity markets.** The objective was clear: from the opening (9:00) to the closing (17:30) of the French stock market, the system would continuously scan for price discrepancies on any listed French stock between two different trading venues. When an opportunity was detected, the algorithm would simultaneously buy on the cheaper market and sell on the more expensive one, instantly capturing the spread as profit.\n## 1. Principle of Arbitrage\n- **Market Monitoring:** The system monitored real-time order books from multiple French stock exchanges, comparing prices for every listed security.\n- **Opportunity Detection:** If a price gap existed (e.g., buy at 4.96€ on Market A, sell at 4.98€ on Market B), the algorithm would calculate the potential profit, factoring in transaction costs.\n- **Trade Execution:** The system would execute a buy order on the cheaper market and a sell order on the more expensive one, matching the available liquidity (e.g., buying 400 shares at 4.96€, selling 400 at 4.98€).\n- **Profit Calculation:** After accounting for order fees (e.g., 0.50€ per trade), the net profit was calculated and trades were only executed if the net gain exceeded a defined threshold (e.g., 1.0€).\n## 2. Example Calculation\nSuppose:\n- 400 shares available at 4.96€ on Market A\n- 600 shares bid at 4.98€ on Market B\n- Buy 400 shares at 4.96€ = 1,984€ (plus 0.50€ fee)\n- Sell 400 shares at 4.98€ = 1,992€ (minus 0.50€ fee)\n- **Gross profit:** 8€\n- **Net profit after fees:** 7€\n<div style=\"text-align: center;\"><img src=\"images/transac.png\" alt=\"Arbitrage Trading\" style=\"width:100%;max-width:500px;margin:16px 0;\"></div>\nBy repeating such trades across multiple securities and venues, the system could both help regularize prices and generate significant cumulative profits.\n## 3. Technical Challenges and Solutions\n\n- **Ultra-Low Latency:** The stock market is highly volatile and reactive; opportunities can vanish in milliseconds. The system had to detect and act on arbitrage opportunities in under 10 milliseconds.\n- **Real-Time Data Streaming:** Continuous comparison of live order books between venues required robust, high-speed data ingestion and processing.\n- **Distributed and Parallel Computing:** To achieve the required speed, all computations were distributed and parallelized across a cluster of machines, each equipped with 72 CPUs. This allowed simultaneous scanning and decision-making across all securities and markets.\n- **Efficient Implementation:** The entire system was developed in C++ for maximum performance, with parallelization managed via MPI (Message Passing Interface).\n## 4. Development Timeline\n- **Rapid Prototyping:** The complete solution was designed, developed, and tested in just 7 days—a testament to agile development and deep technical expertise.\n## 5. Legal and Regulatory Considerations\nDespite the system's ability to generate substantial profits and contribute to market efficiency, it could not be deployed in production due to legal restrictions. High-frequency trading and cross-market arbitrage are subject to strict regulations in France and Europe, particularly regarding market manipulation, fair access, and systemic risk. The project was therefore halted before live deployment.\n## Conclusion\nThis project demonstrates the power of algorithmic trading and high-performance computing in financial markets. By combining real-time data analysis, parallel computing, and rigorous risk controls, it is possible to design systems that can exploit fleeting market inefficiencies—provided that all legal and ethical standards are rigorously observed.",
+  "author": "LjSoulimen",
+  "date": "2022-06-10",
+  "category": "Algorithmic Trading",
+  "tags": ["Algorithmic Trading", "Arbitrage", "High-Frequency Trading", "Parallel Computing", "C++", "MPI", "French Markets"],
+  "read_time": "4 min"
 }
-
-
 
 ];
 

@@ -55,7 +55,21 @@ const articlesData = [
   "category": "Algorithmic Trading",
   "tags": ["Algorithmic Trading", "Arbitrage", "High-Frequency Trading", "Parallel Computing", "C++", "MPI", "French Markets"],
   "read_time": "4 min"
+},
+{
+  "id": 5,
+  "title": "Risk Scoring and Propagation in Financial Graphs: Detecting Market Abuse and Fraud",
+  "slug": "risk-scoring-graph-market-surveillance",
+  "image": "images/graph.jpg",
+  "excerpt": "How graph-based risk scoring leverages connections between accounts, transactions, and entities to proactively detect market abuse and financial fraud.",
+  "content": "# Risk Scoring and Propagation in Financial Graphs: Detecting Market Abuse and Fraud<div style=\"text-align: center;\"><img src=\"images/graphtheory.png\" alt=\"Graph Risk Scoring\" style=\"width:100%;max-width:500px;margin:16px 0;\"></div>\n Graph technologies have revolutionized the way institutions assess risk across accounts, transactions, and counterparties. By representing entities, accounts, and transactions as nodes in a graph, and the relationships between them as weighted edges, we can capture complex market interactions and propagate risk ratings with unprecedented precision. I work and managed few solutions on this project with my team.\n## 1. Fundamentals of Graph-Based Risk Scoring\n- **Nodes:** Each node represents a _tier_, an _account_, or a _transaction_. Each is assigned an initial risk score based on intrinsic factors (e.g., legal profile, economic activity, transaction history).\n- **Edges:** Links between nodes (e.g., _account-to-account transfer_, _tier-to-transaction_) have coefficients that quantify the strength or exposure of the relationship. These can represent transaction amounts, frequency, or legal ties.\n## 2. Dynamic Scoring Example\nSuppose:\n- A _third-party node_ (Tier) has a risk score of **20**.\n- It connects to three accounts (**C1**, **C2**, **C3**), each with a score of **50**.\n- Account **C1** performs a large transaction (**T1**) rated at **100** towards a fourth account (**C4**).\n## 3. Score Propagation and Grapple Update\n- At every new transaction or change in risk, the entire locally-connected graph (grappe) must be recalculated.\n- The recalculation involves spreading the impact of a high-risk event (e.g., T1) across its vicinity, using _decay coefficients_ on each link.\n- The spread of risk diminishes with the distance from the source node; deeper nodes are less impacted (e.g., a propagation factor such as _coef^depth_).\n### Example Algorithm (Intuitive)\n- **Immediate neighbors**: Receive the highest impact from a high-score node (e.g., direct coefficients such as 1.0, 0.8, etc.).\n- **Second-degree nodes**: Impact is the neighbor's score x coefficient (e.g., 0.5 or lower).\n- **Larger depths**: The further a node is, the more the score's influence is dampened.\n## 4. Applications \n- **Market Surveillance:** Systemically propagate the risk of suspicious transactions through the graph to raise red flags proactively.\n- **Fraud Detection:** When a transaction or account suddenly exhibits high-risk behavior, its influence can be instantly mapped to all linked entities—surfacing hidden networks.\n- **Risk Management:** Allows dynamic recalculation of scores so that a new risk event in any node updates the risk across all connected nodes in real time.\n## 5. Visualizing and Interpreting Scores\nAll nodes’ scores become a blend of their individual risk and the _weighted_ risk of their immediate (and distant) connections. This provides a holistic, context-aware risk signal for each entity.\n## 6. Key Takeaways\n- A graph scoring approach breaks data silos and models systemic, network-based risk.\n- Propagation coefficients and depth-based dampening ensure that the risk impact is realistic, reflecting only significant, well-connected exposures.\n- This method greatly improves the early detection of _market abuse_, _collusion_, and _complex financial fraud_—empowering teams to proactively investigate high-risk clusters before issues escalate.",
+  "author": "Laouej Soulimen",
+  "date": "2025-07-19",
+  "category": "Graph Analytics",
+  "tags": ["Graph", "Risk Scoring", "Fraud Detection", "Market Surveillance", "Node Propagation"],
+  "read_time": "3 min"
 }
+
 
 ];
 
